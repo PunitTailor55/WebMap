@@ -262,10 +262,15 @@ def index(request, filterservice="", filterportid=""):
 			r['out2'] = json.dumps(oo['nmaprun'], indent=4)
 			o = json.loads(r['out2'])
 
+			if type(o['host']) is dict:
+				hostnum = str(len(o['host']))
+			else:
+				hostnum = '1'
+
 			r['trhost'] += '<tr>'+\
 			'	<td style="font-family:monospace">'+html.escape(i)+'</td>'+\
 			'	<td>'+html.escape(o['@startstr'])+'</td>'+\
-			'	<td>'+html.escape(str(len(o['host'])))+'</td>'+\
+			'	<td>'+hostnum+'</td>'+\
 			'	<td><a href="/setscanfile/'+html.escape(i)+'" class="btn blue right">view</a></td>'+\
 			'</tr>'
 
