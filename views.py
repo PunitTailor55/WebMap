@@ -235,8 +235,8 @@ def index(request, filterservice="", filterportid=""):
 		'	</div>'+\
 		'	<div class="col s3" style="color:#999;"><b>GitHub:</b><br><br>'+\
 		'		<a class="github-button" href="https://github.com/theMiddleBlue" data-size="large" data-show-count="true" aria-label="Follow theMiddle on GitHub">Follow theMiddle</a><br>'+\
-		'		<a class="github-button" href="https://github.com/ntkme/github-buttons/subscription" data-icon="octicon-eye" data-size="large" data-show-count="true" aria-label="Watch ntkme/github-buttons on GitHub">Watch</a><br>'+\
-		'		<a class="github-button" href="https://github.com/ntkme/github-buttons" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star ntkme/github-buttons on GitHub">Star</a>'+\
+		'		<a class="github-button" href="https://github.com/Rev3rseSecurity/WebMap/subscription" data-icon="octicon-eye" data-size="large" data-show-count="true" aria-label="Watch Rev3rseSecurity/WebMap on GitHub">Watch</a><br>'+\
+		'		<a class="github-button" href="https://github.com/Rev3rseSecurity/WebMap/" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star Rev3rseSecurity/WebMap on GitHub">Star</a>'+\
 		'	</div>'+\
 		'	<div class="col s5" style="color:#999;"><b>Follow me:</b><br><br>'+\
 		'		<a href="https://twitter.com/Menin_TheMiddle?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="true">Follow @Menin_TheMiddle</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><br>'+\
