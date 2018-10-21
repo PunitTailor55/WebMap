@@ -1,7 +1,7 @@
-<center>
-<img width="300" src="https://i.imgur.com/puyIfHT.jpg" /><br>
+<p align="center">
+<img width="300" src="https://i.imgur.com/puyIfHT.jpg" />
 A Web Dashbord for Nmap XML Report 
-</center>
+</p>
 
 ![WebMap](https://i.imgur.com/U9S089v.png)
 
@@ -60,5 +60,5 @@ This app is not intended to be exposed on the internet. Please, **DO NOT expose*
 This project is currently a beta, and I'm not super skilled on Django so, every type of contribution is appreciated. I'll mention all contributors in this section of the README file.
 
 ## Contacts
-Twitter: [@Menin_TheMiddle](https://twitter.com/Menin_TheMiddle)
+Twitter: [@Menin_TheMiddle](https://twitter.com/Menin_TheMiddle)<br>
 YouTube: [Rev3rseSecurity](https://www.youtube.com/rev3rsesecurity)
