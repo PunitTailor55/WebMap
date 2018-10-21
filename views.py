@@ -307,6 +307,8 @@ def index(request, filterservice="", filterportid=""):
 	r['trhead'] = '<tr><th width="260">Host</th><th>Port State</th><th width="160" style="text-align:center;">Tot Ports</th><th width="200">Services</th><th width="200">Ports</th><th>&nbsp;</th></tr>'
 
 	for ik in o['host']:
+
+		# this fix single host report
 		if type(ik) is dict:
 			i = ik
 		else:
@@ -456,6 +458,7 @@ def index(request, filterservice="", filterportid=""):
 				'</tr>'
 				hostindex = (hostindex + 1)
 
+				# this fix single host report
 				if type(ik) is not dict:
 					break;
 
