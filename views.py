@@ -262,7 +262,7 @@ def index(request, filterservice="", filterportid=""):
 			r['out2'] = json.dumps(oo['nmaprun'], indent=4)
 			o = json.loads(r['out2'])
 
-			if type(o['host']) is dict:
+			if type(o['host']) is not dict:
 				hostnum = str(len(o['host']))
 			else:
 				hostnum = '1'
