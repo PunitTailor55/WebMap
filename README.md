@@ -13,6 +13,7 @@ A Web Dashbord for Nmap XML Report
 - [Usage](#usage)
 - [Video](#video)
 - [Features](#features)
+- [XML Filenames](#xml-filenames)
 - [Third Parts](#third-parts)
 - [Security Issues](#security-issues)
 - [Contributors](#contributors)
@@ -39,12 +40,21 @@ Now point your browser to http://localhost:8000
 
 ## Features
 - Import and parse Nmap XML files
-- Statistics and Chats on discovered services, port, OS, etc...
+- Statistics and Charts on discovered services, ports, OS, etc...
 - Inspect a single host by clicking on its IP address
 - Attach labels on a host
 - Insert notes for a specific host
 - Create a PDF Report with charts, details, labels and notes
 - Copy to clipboard as Nikto, Curl or Telnet commands
+
+## XML Filenames
+When creating the PDF version of the Nmap XML Report, the XML filename is used as document title on the first page. WebMap will replace some parts of the filename as following:
+
+- `_` will replaced by a space (` `)
+- `.xml` will be removed
+
+Example: `ACME_Ltd..xml`<br>
+PDF title: `ACME Ltd.`
 
 ## Third Parts
 - [Django](https://www.djangoproject.com)
