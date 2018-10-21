@@ -306,7 +306,12 @@ def index(request, filterservice="", filterportid=""):
 	r['trhost'] = ''
 	r['trhead'] = '<tr><th width="260">Host</th><th>Port State</th><th width="160" style="text-align:center;">Tot Ports</th><th width="200">Services</th><th width="200">Ports</th><th>&nbsp;</th></tr>'
 
-	for i in o['host']:
+	for ik in o['host']:
+		if type(ik) is dict:
+			i = ik
+		else:
+			i = o['host']
+
 		hostname = ''
 
 		if 'hostnames' in i and type(i['hostnames']) is dict:
@@ -450,6 +455,9 @@ def index(request, filterservice="", filterportid=""):
 				'	</td>'+\
 				'</tr>'
 				hostindex = (hostindex + 1)
+
+				if type(ik) is not dict:
+					break;
 
 	totports = (ports['open']+ports['closed']+ports['filtered'])
 	if filterservice == "" and filterportid == "":
