@@ -10,13 +10,13 @@ A Web Dashbord for Nmap XML Report
 ![WebMap](https://i.imgur.com/alWZix9.png)
 
 ## Table Of Contents
-- Usage
-- Video
-- Features
-- Third Parts
-- Security Issues
-- Contributors
-- Contacts
+- [Usage](#usage)
+- [Video](#video)
+- [Features](#features)
+- [Third Parts](#third-parts)
+- [Security Issues](#security-issues)
+- [Contributors](#contributors)
+- [Contacts](#contacts)
 
 ## Usage
 You should use this with docker, just by sending this command:
