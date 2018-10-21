@@ -174,11 +174,6 @@ def reportPDFView(request):
 
 				portsfound = True
 
-			# this fix single host report
-			if type(ik) is not dict:
-				break;
-
-
 		notesout,notesb64 = '',''
 		if scanmd5 in noteshost:
 			if addressmd5 in noteshost[scanmd5]:
@@ -208,6 +203,11 @@ def reportPDFView(request):
 			hostdetails += hostdetails_html
 		#else:
 		#	r['out'] += '0,'
+
+		# this fix single host report
+		if type(ik) is not dict:
+			break;
+
 
 	html_ports = ''
 	javascript_ports = ''
