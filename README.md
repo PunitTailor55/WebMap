@@ -69,6 +69,9 @@ This app is not intended to be exposed on the internet. Please, **DO NOT expose*
 ## Contributors
 This project is currently a beta, and I'm not super skilled on Django so, every type of contribution is appreciated. I'll mention all contributors in this section of the README file.
 
+### Contributors List
+- s3th_0x [@adubaldo](https://github.com/adubaldo) (bug on single host report)
+
 ## Contacts
 Twitter: [@Menin_TheMiddle](https://twitter.com/Menin_TheMiddle)<br>
 YouTube: [Rev3rseSecurity](https://www.youtube.com/rev3rsesecurity)
