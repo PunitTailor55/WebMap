@@ -22,7 +22,13 @@ def reportPDFView(request):
 	counters = {'po':0,'pc':0,'pf':0,'hostsup':0,'ostype':{},'pi':{},'ss':{}}
 
 	scanmd5 = hashlib.md5(str(request.session['scanfile']).encode('utf-8')).hexdigest()
-	for i in o['host']:
+	for ik in o['host']:
+
+		# this fix single host report
+		if type(ik) is dict:
+			i = ik
+		else:
+			i = o['host']
 
 		hostcounters = {'po':0,'pc':0,'pf':0,'ostype':{},'pi':{},'ss':{}}
 		hostdetails_html = ''
@@ -168,6 +174,9 @@ def reportPDFView(request):
 
 				portsfound = True
 
+			# this fix single host report
+			if type(ik) is not dict:
+				break;
 
 
 		notesout,notesb64 = '',''

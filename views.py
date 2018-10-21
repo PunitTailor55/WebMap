@@ -178,9 +178,9 @@ def details(request, address):
 					'<td colspan="2" style="color:#999;font-size:12px;">State: '+p['state']['@state']+'<br>Reason: '+p['state']['@reason']+'</td>'+\
 					'<td><button onclick="javascript:apiPortDetails(\''+html.escape(address)+'\',\''+html.escape(p['@portid'])+'\');" class="btn blue right"><i class="material-icons">receipt</i></button></td></tr>'
 
-				# this fix single host report
-				if type(ik) is not dict:
-					break;
+		# this fix single host report
+		if type(ik) is not dict:
+			break;
 
 	notesout,notesb64,removenotes = '','',''
 	if scanmd5 in noteshost:
