@@ -26,7 +26,8 @@ $ docker run -d \
          --name webmap \
          -h webmap \
          -p 8000:8000 \
-         -v /tmp/webmap:/opt/xml
+         -v /tmp/webmap:/opt/xml \
+			rev3rse/webmap /run.sh
 
 $ # now you can run Nmap and save the XML Report on /tmp/webmap
 $ nmap -sT -A -T4 -oX /tmp/webmap/myscan.xml 192.168.1.0/24
