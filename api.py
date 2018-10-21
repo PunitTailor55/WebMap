@@ -69,7 +69,14 @@ def port_details(request, address, portid):
 	r['out'] = json.dumps(oo['nmaprun'], indent=4)
 	o = json.loads(r['out'])
 
-	for i in o['host']:
+	for ik in o['host']:
+
+		# this fix single host report
+		if type(ik) is dict:
+			i = ik
+		else:
+			i = o['host']
+
 		if '@addr' in i['address']:
 			saddress = i['address']['@addr']
 		elif type(i['address']) is list:
